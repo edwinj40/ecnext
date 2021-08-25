@@ -1,0 +1,22 @@
+// para que esto funcione se importa index.scss de manera global
+.basic-layout {
+  min-height: 100vh;
+  background-image: url("https://edgame-ecommerce.s3.eu-west-3.amazonaws.com/static/bg-web.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    // usamos nombres de color de colors.scss
+    background-color: $background-grey-light;
+
+    height: calc(100vh - 130px);
+    box-shadow: opx opx 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: opx opx 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: opx opx 10px 0px rgba(0, 0, 0, 0.75);
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
